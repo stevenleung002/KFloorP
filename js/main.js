@@ -14,8 +14,8 @@ var doorOpenIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="
 var fanOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M12.5 2C9.64 2 8.57 4.55 9.29 7.47L15 13.16c.87.21 1.81.65 2.28 1.57c1.18 2.37 4.75 2.27 4.75-2.23c0-3.58-3.98-4.37-7.68-2.37c-.32-.4-.74-.71-1.22-.91c.19-.93.63-1.98 1.62-2.47C17.11 5.57 17 2 12.5 2M3.28 4L2 5.27l2.47 2.46C3.22 7.74 2 8.87 2 11.5c0 3.57 3.96 4.35 7.65 2.37c.32.4.75.72 1.24.92c-.2.92-.64 1.96-1.62 2.45C6.91 18.42 7 22 11.5 22c2.3 0 3.44-1.64 3.44-3.79L18.73 22L20 20.72L3.28 4Z"/></svg>';
 var fanOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M12 11a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75c-.99.49-1.43 1.54-1.62 2.47c.48.2.9.51 1.22.91c3.7-2 7.68-1.21 7.68 2.37c0 4.5-3.57 4.6-4.75 2.23c-.5-.99-1.56-1.43-2.49-1.62c-.2.48-.51.89-.91 1.23c1.99 3.69 1.2 7.66-2.38 7.66c-4.5 0-4.59-3.58-2.23-4.76c.98-.49 1.42-1.53 1.62-2.45c-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5C2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61c.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg>';
 var floorplanIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M10 5v5H9V5H5v8h4v-1h1v5H9v-3H5v5h7v-2h1v2h6v-2h2v4H3V3h18v12h-2v-5h-6v5h-1V9h7V5h-9Z"/></svg>';
-var fridgeOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M22.11 21.46L2.39 1.73L1.11 3L5 6.89V19a2 2 0 0 0 2 2v1h2v-1h6v1h2v-1c.58 0 1.1-.25 1.46-.65l2.38 2.38l1.27-1.27M17 19H7v-8h2.11L17 18.89V19M7.2 4L5.7 2.5c.35-.31.8-.5 1.3-.5h10a2 2 0 0 1 2 2v11.8l-2-2V11h-2.8l-2-2H17V4H7.2m.8 8h2v3H8v-3Z"/></svg>';
-var fridgeOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M9 21v1H7v-1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2v1h-2v-1H9M7 4v5h10V4H7m0 15h10v-8H7v8m1-7h2v3H8v-3m0-6h2v2H8V6Z"/></svg>';
+var fridgeOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M22.11 21.46L2.39 1.73L1.11 3L5 6.89V19a2 2 0 0 0 2 2v1h2v-1h6v1h2v-1c.58 0 1.1-.25 1.46-.65l2.38 2.38l1.27-1.27M17 19H7v-8h2.11L17 18.89V19M7.2 4L5.7 2.5c.35-.31.8-.5 1.3-.5h10a2 2 0 0 1 2 2v11.8l-2-2V11h-2.8l-2-2H17V4H7.2m.8 8h2v3H8v-3Z"/></svg>';
+var fridgeOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M9 21v1H7v-1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2v1h-2v-1H9M7 4v5h10V4H7m0 15h10v-8H7v8m1-7h2v3H8v-3m0-6h2v2H8V6Z"/></svg>';
 var googleAssistantIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M7 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m14.5 4A1.5 1.5 0 0 0 20 7.5A1.5 1.5 0 0 0 21.5 9A1.5 1.5 0 0 0 23 7.5A1.5 1.5 0 0 0 21.5 6M17 8a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 7a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 17 22a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 17 15Z"/></svg>';
 var googleAssistantIconGray = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="gray" d="M7 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m14.5 4A1.5 1.5 0 0 0 20 7.5A1.5 1.5 0 0 0 21.5 9A1.5 1.5 0 0 0 23 7.5A1.5 1.5 0 0 0 21.5 6M17 8a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 7a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 17 22a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 17 15Z"/></svg>';
 var heaterOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M3.28 2L2 3.27l2.77 2.77l.87 1.35L4.22 9.6l1.73.9l1.28-2l3.5 3.5H4a2 2 0 0 0-2 2v8h2v-2h14.73L20 21.27V22h2v-1.28L3.28 2M7 17a1 1 0 0 1-1 1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1a1 1 0 0 1 1 1v2m4 0a1 1 0 0 1-1 1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1a1 1 0 0 1 1 1v2m4 0a1 1 0 0 1-1 1a1 1 0 0 1-1-1v-2c0-.21.08-.39.18-.55L15 16.27V17m1.25-7.5l1.42-2.2l-1.42-2.2l2-3.1l1.75.89l-1.44 2.21L20 7.3v.01l-2 3.09l-1.75-.9M22 14v4.18l-3-3V15a1 1 0 0 0-1-1c-.05 0-.1 0-.15.03L15.82 12H20a2 2 0 0 1 2 2M11.64 7.3l-1.42-2.2l2-3.1l1.73.89l-1.42 2.21l1.42 2.2l-.01.01L12.84 9l-1.4-1.38l.2-.32M7.5 3.69L6.1 2.28l.12-.19L7.95 3l-.45.69Z"/></svg>';
@@ -35,10 +35,10 @@ var switchesIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="
 var switchOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3z"/></svg>';
 var switchOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-7c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3Z"/></svg>';
 var temperatureIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M15 13V5a3 3 0 0 0-6 0v8a5 5 0 1 0 6 0m-3-9a1 1 0 0 1 1 1v3h-2V5a1 1 0 0 1 1-1Z"/></svg>';
-var tvOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M.5 2.77L1.78 1.5L21 20.72L19.73 22l-3-3H16v2H8v-2H3a2 2 0 0 1-2-2V5c0-.5.17-.93.46-1.27L.5 2.77M21 17V5H7.82l-2-2H21a2 2 0 0 1 2 2v12c0 .85-.55 1.59-1.3 1.87L19.82 17H21M3 17h11.73L3 5.27V17Z"/></svg>';
-var tvOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M21 17H3V5h18m0-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>';
-var washingMachineOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M22.11 21.46L2.39 1.73L1.11 3L4 5.89V20c0 1.11.89 2 2 2h12c.58 0 1.1-.25 1.46-.65l1.38 1.38l1.27-1.27M12 20c-3.31 0-6-2.69-6-6c0-1.68.7-3.2 1.82-4.29l4.24 4.24l-2.89 2.88a4.008 4.008 0 0 0 5.66 0c.02-.02.03-.04.05-.06l1.41 1.41A5.956 5.956 0 0 1 12 20m-.75-11.95C11.5 8 11.75 8 12 8c3.31 0 6 2.69 6 6c0 .25 0 .5-.05.75L20 16.8V4a2 2 0 0 0-2-2H6c-.24 0-.46.05-.67.13l5.92 5.92M10 4c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1Z"/></svg>';
-var washingMachineOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M14.83 11.17a4.008 4.008 0 0 1 0 5.66a4.008 4.008 0 0 1-5.66 0l5.66-5.66M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m1 2a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m3 0a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m2 4a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6Z"/></svg>';
+var tvOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M.5 2.77L1.78 1.5L21 20.72L19.73 22l-3-3H16v2H8v-2H3a2 2 0 0 1-2-2V5c0-.5.17-.93.46-1.27L.5 2.77M21 17V5H7.82l-2-2H21a2 2 0 0 1 2 2v12c0 .85-.55 1.59-1.3 1.87L19.82 17H21M3 17h11.73L3 5.27V17Z"/></svg>';
+var tvOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M21 17H3V5h18m0-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>';
+var washingMachineOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M22.11 21.46L2.39 1.73L1.11 3L4 5.89V20c0 1.11.89 2 2 2h12c.58 0 1.1-.25 1.46-.65l1.38 1.38l1.27-1.27M12 20c-3.31 0-6-2.69-6-6c0-1.68.7-3.2 1.82-4.29l4.24 4.24l-2.89 2.88a4.008 4.008 0 0 0 5.66 0c.02-.02.03-.04.05-.06l1.41 1.41A5.956 5.956 0 0 1 12 20m-.75-11.95C11.5 8 11.75 8 12 8c3.31 0 6 2.69 6 6c0 .25 0 .5-.05.75L20 16.8V4a2 2 0 0 0-2-2H6c-.24 0-.46.05-.67.13l5.92 5.92M10 4c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1Z"/></svg>';
+var washingMachineOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="black" d="M14.83 11.17a4.008 4.008 0 0 1 0 5.66a4.008 4.008 0 0 1-5.66 0l5.66-5.66M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m1 2a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m3 0a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m2 4a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6Z"/></svg>';
 var waterFountainOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M1 4.27L2.28 3L21 21.72L19.73 23l-1.46-1.46c-.34.29-.77.46-1.27.46H7a2.02 2.02 0 0 1-2-1.77L3.53 6.8L1 4.27M18.32 8l.45-4H5.82l-2-2H21l-1.71 15.47L9.82 8h8.5Z"/></svg>';
 var waterFountainOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M18.32 8H5.67l-.44-4h13.54M12 19a3 3 0 0 1-3-3c0-2 3-5.4 3-5.4s3 3.4 3 5.4a3 3 0 0 1-3 3M3 2l2 18.23c.13 1 .97 1.77 2 1.77h10c1 0 1.87-.77 2-1.77L21 2H3Z"/></svg>';
 var windowClosedIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M6 11h4V9h4v2h4V4H6v7m12 2H6v7h12v-7M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/></svg>';
@@ -70,19 +70,19 @@ function startup(floor) {
 
     if (floor == 1 || floor == 2) {
         loadContent(floor);
-        setInterval(loadContent, 10000, floor);
+        setInterval(loadContent, 20000, floor);
     } else if (floor == 3) {
-        loadContentSwitches();
-        setInterval(loadContentSwitches, 10000);
+        // loadContentSwitches();
+        // setInterval(loadContentSwitches, 10000);
     } else if (floor == 4) {
-        loadContentLights();
-        setInterval(loadContentLights, 10000);
+        // loadContentLights();
+        // setInterval(loadContentLights, 10000);
     } else if (floor == 5) {
-        loadContentAutomations();
-        setInterval(loadContentAutomations, 10000);
+        // loadContentAutomations();
+        // setInterval(loadContentAutomations, 10000);
     } else if (floor == 6) {
-        loadContentPlayers();
-        setInterval(loadContentPlayers, 10000);
+        // loadContentPlayers();
+        // setInterval(loadContentPlayers, 10000);
         // COMMENT THE 2 LINES ABOVE
         // UNCOMMENT THE LINES BELOW
         // AND PUT THE NAME OF THE MEDIA PLAYER SENSOR
@@ -180,9 +180,15 @@ function loadContent(floor, entity_id) {
                                 break;
                             case "switch":
                                 if (floorEntities[i].length < 4) {
-                                    clickableIcon.innerHTML = overrideIconBaseOnEntityId(floorEntities[i][0], true)
+                                    clickableIcon.innerHTML = switchOnIcon;
                                 } else {
                                     switch (floorEntities[i][3].toLowerCase()) {
+                                        case "light":
+                                            clickableIcon.innerHTML = lightOnIcon;
+                                            break;
+                                        case "tv":
+                                            clickableIcon.innerHTML = tvOnIcon;
+                                            break;
                                         case "washingmachine":
                                             clickableIcon.innerHTML = washingMachineOnIcon;
                                             break;
@@ -223,9 +229,15 @@ function loadContent(floor, entity_id) {
                                 break;
                             case "switch":
                                 if (floorEntities[i].length < 4) {
-                                    clickableIcon.innerHTML = overrideIconBaseOnEntityId(floorEntities[i][0], false)
+                                    clickableIcon.innerHTML = switchOffIcon;
                                 } else {
                                     switch (floorEntities[i][3].toLowerCase()) {
+                                        case "light":
+                                            clickableIcon.innerHTML = lightOffIcon;
+                                            break;
+                                        case "tv":
+                                            clickableIcon.innerHTML = tvOffIcon;
+                                            break;
                                         case "washingmachine":
                                             clickableIcon.innerHTML = washingMachineOffIcon;
                                             break;
@@ -278,6 +290,12 @@ function loadContent(floor, entity_id) {
                                 case "door":
                                     newIcon.innerHTML = doorOpenIcon;
                                     break;
+                                case "fridge":
+                                    newIcon.innerHTML = fridgeOnIcon;
+                                    break;    
+                                case "tv":
+                                    newIcon.innerHTML = tvOnIcon;
+                                    break;
                                 default:
                                     newIcon.innerHTML = binarySensorOnIcon;
                             }
@@ -293,6 +311,12 @@ function loadContent(floor, entity_id) {
                                     break;
                                 case "door":
                                     newIcon.innerHTML = doorClosedIcon;
+                                    break;
+                                case "fridge":
+                                    newIcon.innerHTML = fridgeOffIcon;
+                                    break;    
+                                case "tv":
+                                    newIcon.innerHTML = tvOffIcon;
                                     break;
                                 default:
                                     newIcon.innerHTML = binarySensorOffIcon;
@@ -961,7 +985,7 @@ function overrideIconBaseOnEntityId(entity_id, onOrOff) {
     var icon;
     var parts = entity_id.split('_');
     var suffix = parts[parts.length - 1]; // Extract the last part
-    
+
     if (onOrOff) {
         switch (suffix) {
             case "light":

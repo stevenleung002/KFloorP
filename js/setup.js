@@ -74,20 +74,22 @@ var showWeatherIcon = true;
 // DEVICES FOR 1ST FLOOR
 var devices1stFloor = [
     // Garage
-    ["switch.garage_light", 890, 345],
-    // ["switch.dryer", 700, 72],
-    // ["switch.washer", 700, 190],
+    ["switch.garage_light", 890, 345, "light"],
+    ["switch.samsung_dryer", 710, 60, "washingmachine"],
+    ["switch.samsung_washer", 710, 180, "washingmachine"],
     // LIVING
-    ["switch.living_light", 380, 110],
+    ["switch.living_light", 360, 160, "light"],
+    ["binary_sensor.75_tcl_roku_tv_sensor", 380, 50, "tv"],
     // DINING
-    ["switch.dining_light", 380, 425],
+    ["switch.dining_light", 380, 425, "light"],
     // KITCHEN
-    ["switch.kitchen_light", 590, 800],
+    ["switch.kitchen_light", 590, 800, "light"],
+    ["binary_sensor.refrigerator_contact", 655, 1020, "fridge"],
     // LOUNGE
-    ["switch.lounge_light", 760, 1010],
-    ["switch.couch_light", 1010, 1080],
+    ["switch.lounge_light", 760, 1010, "light"],
+    ["switch.couch_light", 1010, 1080, "light"],
     // FrontDoor
-    ["light.door_light", 1190, 900],
+    ["light.door_light", 1190, 900, "light"],
 ];
 
 
