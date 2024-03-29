@@ -12,12 +12,12 @@ var hasspass = "";
 // EXAMPLE: var floorplan1stFloor = "./images/floorplan.png"
 // EXAMPLE: var floorplan1stFloor = "./images/blank.png"
 var floorplan1stFloor = "./images/first-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 1ST FLOOR
-var floorplan2ndFloor = "./images/first-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
+var floorplan2ndFloor = "./images/blank.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
 
 // SHOW (true) / HIDE (false) MENUS
 // SELECT A MAXIMUM OF 3 ITEMS (IF YOU USE ONLY ONE FLOOR) OR 2 ITEMS (IF YOU USE 2 FLOORS) TO FIT IN THE MENU
-var showSwitchesMenu = true;
-var showLightsMenu = true;
+var showSwitchesMenu = false;
+var showLightsMenu = false;
 var showAutomationsMenu = false;
 var showPlayersMenu = false;
 
@@ -74,20 +74,20 @@ var showWeatherIcon = true;
 // DEVICES FOR 1ST FLOOR
 var devices1stFloor = [
     // Garage
-    ["switch.garage_light", 890, 370],
-    ["switch.dryer", 700, 72],
-    ["switch.washer", 700, 190],
+    ["switch.garage_light", 890, 345],
+    // ["switch.dryer", 700, 72],
+    // ["switch.washer", 700, 190],
     // LIVING
-    ["switch.living_light", 370, 130],
+    ["switch.living_light", 380, 110],
     // DINING
-    ["switch.dining_light", 370, 455],
+    ["switch.dining_light", 380, 425],
     // KITCHEN
-    ["switch.kitchen_light", 580, 830],
+    ["switch.kitchen_light", 590, 800],
     // LOUNGE
-    ["switch.lounge_light", 760, 1050],
-    ["switch.couch_light", 1040, 1120],
+    ["switch.lounge_light", 760, 1010],
+    ["switch.couch_light", 1010, 1080],
     // FrontDoor
-    ["light.door_light", 1210, 920],
+    ["light.door_light", 1190, 900],
 ];
 
 
@@ -96,8 +96,5 @@ var devices1stFloor = [
 // EMPTY EXAMPLE: var devices2ndFloor = [];
 var devices2ndFloor = [
 	// LOFT
-    ["switch.switch_xpto_1", 165, 50],
-	
 	// POOL
-	
 ];
