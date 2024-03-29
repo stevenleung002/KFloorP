@@ -11,25 +11,25 @@ var hasspass = "";
 // YOUR HOME FLOORPLAN FILE PATH.
 // EXAMPLE: var floorplan1stFloor = "./images/floorplan.png"
 // EXAMPLE: var floorplan1stFloor = "./images/blank.png"
-var floorplan1stFloor = "./images/floorplan.png"; // YOUR FLOORPLAN IMAGE PATH FOR 1ST FLOOR
-var floorplan2ndFloor = "./images/blank.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
+var floorplan1stFloor = "./images/first-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 1ST FLOOR
+var floorplan2ndFloor = "./images/first-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
 
 // SHOW (true) / HIDE (false) MENUS
 // SELECT A MAXIMUM OF 3 ITEMS (IF YOU USE ONLY ONE FLOOR) OR 2 ITEMS (IF YOU USE 2 FLOORS) TO FIT IN THE MENU
 var showSwitchesMenu = true;
-var showLightsMenu = false;
+var showLightsMenu = true;
 var showAutomationsMenu = false;
-var showPlayersMenu = true;
+var showPlayersMenu = false;
 
 // IF YOUR KINDLE DOES NOT DISPLAY YOUR CORRECT TIME,
 // CHANGE THE TIMEOFFSET FROM 0 TO THE DIFFERENCE BETWEEN YOUR NEEDS
 // (EITHER NEGATIVES OR POSITIVES VALUES ARE ACCEPTED)
-var timeoffset = -3;
+var timeoffset = 0;
 
 // SHOW TIME IN 24H OR 12H PATTERN
 // true = 10:34 PM
 // false = 22:34
-var showAmPmTime = false;
+var showAmPmTime = true;
 
 // SHOW (true) / HIDE (false) WEATHER ICON ON EXTENDED FORECAST
 var showWeatherIcon = true;
@@ -73,14 +73,21 @@ var showWeatherIcon = true;
 
 // DEVICES FOR 1ST FLOOR
 var devices1stFloor = [
+    // Garage
+    ["switch.garage_light", 890, 370],
+    ["switch.dryer", 700, 72],
+    ["switch.washer", 700, 190],
     // LIVING
-
-    // ROOM
-
-    // SUITE
-
+    ["switch.living_light", 370, 130],
+    // DINING
+    ["switch.dining_light", 370, 455],
     // KITCHEN
-
+    ["switch.kitchen_light", 580, 830],
+    // LOUNGE
+    ["switch.lounge_light", 760, 1050],
+    ["switch.couch_light", 1040, 1120],
+    // FrontDoor
+    ["light.door_light", 1210, 920],
 ];
 
 
@@ -89,6 +96,7 @@ var devices1stFloor = [
 // EMPTY EXAMPLE: var devices2ndFloor = [];
 var devices2ndFloor = [
 	// LOFT
+    ["switch.switch_xpto_1", 165, 50],
 	
 	// POOL
 	
