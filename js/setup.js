@@ -12,7 +12,7 @@ var hasspass = "";
 // EXAMPLE: var floorplan1stFloor = "./images/floorplan.png"
 // EXAMPLE: var floorplan1stFloor = "./images/blank.png"
 var floorplan1stFloor = "./images/first-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 1ST FLOOR
-var floorplan2ndFloor = "./images/blank.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
+var floorplan2ndFloor = "./images/second-floor-base.png"; // YOUR FLOORPLAN IMAGE PATH FOR 2ND FLOOR
 
 // SHOW (true) / HIDE (false) MENUS
 // SELECT A MAXIMUM OF 3 ITEMS (IF YOU USE ONLY ONE FLOOR) OR 2 ITEMS (IF YOU USE 2 FLOORS) TO FIT IN THE MENU
@@ -24,7 +24,7 @@ var showPlayersMenu = false;
 // IF YOUR KINDLE DOES NOT DISPLAY YOUR CORRECT TIME,
 // CHANGE THE TIMEOFFSET FROM 0 TO THE DIFFERENCE BETWEEN YOUR NEEDS
 // (EITHER NEGATIVES OR POSITIVES VALUES ARE ACCEPTED)
-var timeoffset = 0;
+var timeoffset = -7;
 
 // SHOW TIME IN 24H OR 12H PATTERN
 // true = 10:34 PM
@@ -84,12 +84,12 @@ var devices1stFloor = [
     ["switch.dining_light", 380, 425, "light"],
     // KITCHEN
     ["switch.kitchen_light", 590, 800, "light"],
-    ["binary_sensor.refrigerator_contact", 655, 1020, "fridge"],
+    ["binary_sensor.refrigerator_contact", 650, 1020, "fridge"],
     // LOUNGE
     ["switch.lounge_light", 760, 1010, "light"],
-    ["switch.couch_light", 1010, 1080, "light"],
+    ["switch.couch_light", 1020, 1080, "light"],
     // FrontDoor
-    ["light.door_light", 1190, 900, "light"],
+    ["light.door_light", 1200, 900, "light"],
 ];
 
 
@@ -97,6 +97,15 @@ var devices1stFloor = [
 // LEAVE EMPTY IF YOU ONLY HAVE 1 FLOOR
 // EMPTY EXAMPLE: var devices2ndFloor = [];
 var devices2ndFloor = [
-	// LOFT
-	// POOL
+	// Master
+    ["switch.big_light", 330, 160, "light"],
+    ["switch.big_fan", 330, 280, "fan"],
+    // Office
+    ["switch.office_light", 330, 460, "light"],
+    // Room A
+    ["switch.work_light", 850, 100, "light"],
+    // Room B
+    ["switch.bed_light", 850, 385, "light"],
+    // Guest
+    ["switch.guest_light", 520, 985, "light"],
 ];
