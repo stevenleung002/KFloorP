@@ -91,11 +91,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="173.25"
-     inkscape:cy="264.25"
+     inkscape:zoom="4"
+     inkscape:cx="286.375"
+     inkscape:cy="226.375"
      inkscape:document-units="mm"
-     inkscape:current-layer="g3"
+     inkscape:current-layer="layer15"
      showgrid="true"
      inkscape:snap-object-midpoints="true"
      inkscape:object-paths="true"
@@ -16249,8 +16249,8 @@
          d="m 33.030652,62.224488 14.773477,-0.13059"
          id="path17" />
       <path
-         style="display:inline;fill:none;fill-opacity:0.947115;stroke:#303030;stroke-width:1.43912;stroke-dasharray:none"
-         d="M 0.54548848,51.046178 V 19.819876 l 71.36121652,0.03993 v 23.247299"
+         style="display:inline;fill:none;fill-opacity:0.947115;stroke:#303030;stroke-width:1.54884;stroke-dasharray:none"
+         d="M 0.58308744,56.098542 V 19.891253 l 71.28601856,0.0463 v 26.955534"
          id="path16" />
       <g
          id="g927-6"
@@ -16283,8 +16283,8 @@
            style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       </g>
       <path
-         style="fill:none;fill-opacity:0.947115;stroke:#303030;stroke-width:1.22968;stroke-dasharray:none"
-         d="M 71.998201,43.410712 H 47.766713 v 18.72064 h 24.231488 z"
+         style="fill:none;fill-opacity:0.947115;stroke:#303030;stroke-width:1.10511;stroke-dasharray:none"
+         d="M 72.058854,47.147483 H 47.70606 V 62.19214 h 24.352794 z"
          id="path11" />
       <path
          style="fill:none;fill-opacity:0.947115;stroke:#303030;stroke-width:1.08882;stroke-dasharray:none"
@@ -16326,7 +16326,7 @@
       </g>
       <g
          id="g3423-5-0"
-         transform="matrix(0,-0.71144234,0.59957155,0,5.4429316,-142.45569)"
+         transform="matrix(0,-0.71144234,0.59957155,0,5.5028896,-139.53877)"
          style="display:inline;fill:none"
          inkscape:label="g3423-5">
         <path
@@ -17432,14 +17432,14 @@
            id="tspan11-1-3-6">Hallway</tspan></text>
       <text
          id="text1027-5-1-7-5-6-7-9-7-3-14"
-         y="75.795189"
-         x="81.595871"
+         y="78.763672"
+         x="82.336876"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.68049px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          xml:space="preserve"
          transform="scale(0.9506111,1.0519549)"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.68049px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:3.411"
-           y="75.795189"
-           x="81.595871"
+           y="78.763672"
+           x="82.336876"
            sodipodi:role="line"
            id="tspan11-1-3-6-0">Closet</tspan></text>
       <text

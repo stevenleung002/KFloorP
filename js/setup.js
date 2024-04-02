@@ -98,8 +98,10 @@ var devices1stFloor = [
 // EMPTY EXAMPLE: var devices2ndFloor = [];
 var devices2ndFloor = [
 	// Master
-    ["switch.big_light", 330, 160, "light"],
-    ["switch.big_fan", 330, 280, "fan"],
+    ["switch.space_heater", 330, 40, "heater"],
+    ["switch.big_fan", 330, 160, "fan"],
+    ["switch.big_light", 330, 270, "light"],
+    ["sensor.master_temperature_sensor", 330, 360, "temperature"],
     // Office
     ["switch.office_light", 330, 460, "light"],
     // Room A
