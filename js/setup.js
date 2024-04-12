@@ -2,7 +2,7 @@
 
 // YOUR HOMEASSISTANT ADDRESS.
 // EXAMPLE: var hassaddress = "http://192.168.1.10:8123"
-var hassaddress = "";
+var hassaddress = "http://ha.homelab.lan";
 
 // YOUR HOMEASSISTANT LONG LIVED TOKEN
 // GET IT FROM HA PROFILE
@@ -75,8 +75,8 @@ var showWeatherIcon = true;
 var devices1stFloor = [
     // Garage
     ["switch.garage_light", 890, 345, "light"],
-    ["switch.samsung_dryer", 710, 60, "washingmachine"],
-    ["switch.samsung_washer", 710, 180, "washingmachine"],
+    ["switch.dryer", 710, 60, "washingmachine"],
+    ["switch.washer", 710, 180, "washingmachine"],
     // LIVING
     ["switch.living_light", 360, 160, "light"],
     ["binary_sensor.75_tcl_roku_tv_sensor", 380, 50, "tv"],
