@@ -77,6 +77,8 @@ var devices1stFloor = [
     ["switch.garage_light", 890, 345, "light"],
     ["switch.dryer", 710, 60, "washingmachine"],
     ["switch.washer", 710, 180, "washingmachine"],
+    // Driveway
+    ["light.driveway_floodlight", 1190, 40, "light"],
     // LIVING
     ["switch.living_light", 360, 160, "light"],
     ["binary_sensor.75_tcl_roku_tv_sensor", 380, 50, "tv"],
