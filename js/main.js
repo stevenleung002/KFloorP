@@ -43,7 +43,8 @@ var waterFountainOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" 
 var waterFountainOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M18.32 8H5.67l-.44-4h13.54M12 19a3 3 0 0 1-3-3c0-2 3-5.4 3-5.4s3 3.4 3 5.4a3 3 0 0 1-3 3M3 2l2 18.23c.13 1 .97 1.77 2 1.77h10c1 0 1.87-.77 2-1.77L21 2H3Z"/></svg>';
 var windowClosedIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M6 11h4V9h4v2h4V4H6v7m12 2H6v7h12v-7M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/></svg>';
 var windowOpenIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M6 8h4V6h4v2h4V4H6v4m12 2H6v5h12v-5M6 20h12v-3H6v3M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/></svg>';
-
+var floodlightOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="M6 1v2h3v3.4L4.11 4.38l-2.68 6.46l5.54 2.3l4.97 3.68l1.85.77l3.83-9.24l-1.85-.77L11 6.87V3h3V1zm15.81 5.29l-2.31.96l.76 1.85l2.31-.96zm-2.03 7.28L19 15.42l2.79 1.15l.76-1.85zm-3.59 5.36l-1.85.76l.96 2.31l1.85-.77z"/></svg>'
+var floodlightOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="black" d="m19.78 13.57l2.77 1.15l-.76 1.85L19 15.42zm2.79-5.43l-.76-1.85l-2.31.96l.76 1.85zm-8.23 11.55L15.3 22l1.85-.77l-.96-2.3zM2.39 1.73L1.11 3l2.53 2.53l-2.21 5.31l5.54 2.3l4.97 3.68l1.85.77l.56-1.35l6.49 6.49l1.27-1.27zM6.2 3L6 2.8V1h8v2h-3v3.87l4.77.71l1.85.77l-1.78 4.29L9 5.8V3z"/></svg>'
 var sirenOnIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="currentColor" d="M6 6.9L3.87 4.78l1.41-1.41L7.4 5.5zM13 1v3h-2V1zm7.13 3.78L18 6.9l-1.4-1.4l2.12-2.13zM4.5 10.5v2h-3v-2zm15 0h3v2h-3zM6 20h12a2 2 0 0 1 2 2H4a2 2 0 0 1 2-2m6-15a6 6 0 0 1 6 6v8H6v-8a6 6 0 0 1 6-6"/></svg>'
 var sirenOffIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="currentColor" d="m18 14.8l-9-9c.9-.5 1.9-.8 3-.8c3.3 0 6 2.7 6 6zm2.1-10l-1.4-1.4l-2.1 2.1L18 6.9zm-.6 5.7v2h3v-2zm-15 0h-3v2h3zM1.1 3l5.5 5.5c-.4.7-.6 1.6-.6 2.5v8h11.1l1 1H6c-1.1 0-2 .9-2 2h16.1l.7.7l1.3-1.3L2.4 1.7zM13 1h-2v3h2z"/></svg>'
 
@@ -92,8 +93,30 @@ function startup(floor) {
         // loadContentPlayers("media_player.echo_dot");
         // setInterval(loadContentPlayers, 10000, "media_player.echo_dot");
     }
+    // Resize specifically for mobile devices
+    resizeForMobile();
 }
 
+// Auto Resize Screen to fit on mobile devices
+function resizeForMobile(){
+    // Skip for kindle since it does not have access to the window object
+    if (window) {
+        window.addEventListener('resize', function() {
+            var wrapper = document.getElementById('wrapper');
+            console.log('screen.width');
+            console.log(screen.width);
+            console.log('screen.height');
+            console.log(screen.height);
+            if (screen.width < 500) {
+                console.log('under 500 scale 0.33');
+                wrapper.style.transform = 'scale(0.33)';
+                wrapper.style.transformOrigin = '0 0';
+            }
+        });
+        // Call the resize event listener on page load to set initial state
+        window.dispatchEvent(new Event('resize'));
+    }
+}
 
 // SHOW/HIDE MENU ITEMS
 function setMenu(floor) {
@@ -180,7 +203,14 @@ function loadContent(floor, entity_id) {
 
                         switch (newEntity[0]["entity_id"].split(".")[0].toLowerCase()) {
                             case "light":
-                                clickableIcon.innerHTML = lightOnIcon;
+                                switch (floorEntities[i][3].toLowerCase()) {
+                                    case "light":
+                                        clickableIcon.innerHTML = lightOnIcon;
+                                        break;
+                                    case "floodlight":
+                                        clickableIcon.innerHTML = floodlightOnIcon;
+                                        break;
+                                }
                                 break;
                             case "siren":
                                 clickableIcon.innerHTML = sirenOnIcon;
@@ -232,7 +262,14 @@ function loadContent(floor, entity_id) {
 
                         switch (newEntity[0]["entity_id"].split(".")[0].toLowerCase()) {
                             case "light":
-                                clickableIcon.innerHTML = lightOffIcon;
+                                switch (floorEntities[i][3].toLowerCase()) {
+                                    case "light":
+                                        clickableIcon.innerHTML = lightOffIcon;
+                                        break;
+                                    case "floodlight":
+                                        clickableIcon.innerHTML = floodlightOffIcon;
+                                        break;
+                                }
                                 break;
                             case "siren":
                                 clickableIcon.innerHTML = sirenOffIcon;
